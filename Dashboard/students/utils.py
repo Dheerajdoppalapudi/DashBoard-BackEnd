@@ -149,7 +149,6 @@ def export_data_to_excel(request, name):
             "under_institute": i.under_institute,
         })
     searchpath = "media/"+searchfilename
-    #print("=============================", searchpath, "============================")
     wb = openpyxl.load_workbook(searchpath)
     sheet = wb.get_sheet_by_name('sheet1')
 
